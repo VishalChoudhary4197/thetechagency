@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services & Pricing — The Tech Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .price-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+  .price-table th { text-align: left; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 15px; color: var(--text-muted); padding: 14px 16px; border-bottom: 1px solid var(--border); }
+  .price-table td { padding: 20px 16px; border-bottom: 1px solid var(--border-soft); font-size: 15px; color: var(--text-muted); vertical-align: top; }
+  .price-table td:first-child { color: var(--text); font-weight: 500; }
+  .price-table td.price { color: var(--gold); font-family: 'Space Grotesk', sans-serif; white-space: nowrap; }
+  .price-table-wrap { overflow-x: auto; }
+  .rule-list { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 8px; }
+  .rule-list div h4 { font-size: 17px; margin-bottom: 8px; }
+  .rule-list div p { font-size: 15px; }
+  @media (max-width: 700px) { .rule-list { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-brand">
+      <svg viewBox="0 0 512 512"><defs><linearGradient id="r1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3B82F6"/><stop offset="50%" stop-color="#A855F7"/><stop offset="100%" stop-color="#F97316"/></linearGradient></defs><circle cx="256" cy="256" r="256" fill="url(#r1)"/><circle cx="256" cy="256" r="238" fill="#0B0F1A"/><g transform="rotate(8 256 256) translate(200,160)"><rect width="130" height="160" rx="20" fill="#141B2E" stroke="#3A4A6B" stroke-width="3"/></g><g transform="rotate(-7 256 256) translate(180,180)"><rect width="130" height="160" rx="20" fill="#2A3A6B"/><polygon points="43,45 43,115 90,80" fill="#fff"/></g><g transform="translate(356,150)"><polygon points="0,-22 7,-7 22,0 7,7 0,22 -7,7 -22,0 -7,-7" fill="#F5B942"/></g></svg>
+      THE TECH AGENCY
+    </a>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="thumbnail-review.html">Thumbnail Review</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get a free sample</a>
+  </div>
+</nav>
+
+<div class="page-header wrap">
+  <h1>Pricing that starts small on purpose</h1>
+  <p>Every rate below is a starting point, not a ceiling — it's set to make the first project low-risk for you. Packages beat single pieces on both price and turnaround.</p>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="price-table-wrap">
+      <table class="price-table">
+        <tr><th>Service</th><th>Basic</th><th>Standard</th><th>Premium</th></tr>
+        <tr>
+          <td>Thumbnail Design</td>
+          <td>1 thumbnail<br><span class="price">$6–8</span></td>
+          <td>3 thumbnails<br><span class="price">$15–20</span></td>
+          <td>5 thumbnails + source file<br><span class="price">$25–35</span></td>
+        </tr>
+        <tr>
+          <td>Script Writing</td>
+          <td>Short-form, up to 3 min<br><span class="price">$10–12</span></td>
+          <td>Long-form, up to 10 min<br><span class="price">$20–25</span></td>
+          <td>Long-form + title/thumbnail concept<br><span class="price">$35–40</span></td>
+        </tr>
+        <tr>
+          <td>Video / Reel Editing</td>
+          <td>1 reel, up to 60 sec<br><span class="price">$8–10</span></td>
+          <td>1 video, up to 10 min<br><span class="price">$20–30</span></td>
+          <td>Video + custom thumbnail bundled<br><span class="price">$40–45</span></td>
+        </tr>
+        <tr>
+          <td>Content Strategy</td>
+          <td>1-week content plan<br><span class="price">$15</span></td>
+          <td>1-month content calendar<br><span class="price">$40</span></td>
+          <td>1-month calendar + scripts<br><span class="price">$80</span></td>
+        </tr>
+        <tr>
+          <td>Post Making</td>
+          <td>1 social post<br><span class="price">$6</span></td>
+          <td>Set of 3 posts<br><span class="price">$15</span></td>
+          <td>Set of 5 + templates<br><span class="price">$28</span></td>
+        </tr>
+        <tr>
+          <td>Poster Design</td>
+          <td>1 poster<br><span class="price">$6–8</span></td>
+          <td>2 posters, 1 revision each<br><span class="price">$14</span></td>
+          <td>3 posters + source file<br><span class="price">$25</span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How pricing actually works</h2>
+    </div>
+    <div class="rule-list">
+      <div>
+        <h4>Revisions</h4>
+        <p>Two rounds are included in every package. Anything past that is billed per revision — agreed before work starts, not after.</p>
+      </div>
+      <div>
+        <h4>Advance</h4>
+        <p>New clients pay 50% upfront. It protects both sides and it's non-negotiable for first-time projects.</p>
+      </div>
+      <div>
+        <h4>Retainers</h4>
+        <p>Need this every week? Monthly retainers get priority turnaround and a lower effective rate than one-off orders.</p>
+      </div>
+      <div>
+        <h4>Custom scope</h4>
+        <p>Longer videos, bigger batches, or a mix of services — send the details and get a fixed quote before anything starts.</p>
+      </div>
+    </div>
+    <a href="contact.html" class="btn btn-primary mt-16">Ask about a custom quote</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">
+      <svg viewBox="0 0 512 512"><defs><linearGradient id="r2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3B82F6"/><stop offset="50%" stop-color="#A855F7"/><stop offset="100%" stop-color="#F97316"/></linearGradient></defs><circle cx="256" cy="256" r="256" fill="url(#r2)"/><circle cx="256" cy="256" r="238" fill="#0B0F1A"/><g transform="rotate(8 256 256) translate(200,160)"><rect width="130" height="160" rx="20" fill="#141B2E" stroke="#3A4A6B" stroke-width="3"/></g><g transform="rotate(-7 256 256) translate(180,180)"><rect width="130" height="160" rx="20" fill="#2A3A6B"/><polygon points="43,45 43,115 90,80" fill="#fff"/></g><g transform="translate(356,150)"><polygon points="0,-22 7,-7 22,0 7,7 0,22 -7,7 -22,0 -7,-7" fill="#F5B942"/></g></svg>
+      THE TECH AGENCY
+    </div>
+    <span class="footer-tag"><span>Create</span><span>Manage</span><span>Grow</span></span>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

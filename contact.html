@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — The Tech Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .contact-layout { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
+  .contact-info h3 { font-size: 19px; margin: 28px 0 8px; }
+  .contact-info p { font-size: 15px; }
+  .setup-note { background: var(--bg-raised); border: 1px dashed var(--border); border-radius: var(--radius-sm); padding: 16px 18px; font-size: 13.5px; color: var(--text-dim); margin-top: 28px; }
+  @media (max-width: 800px) { .contact-layout { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-brand">
+      <svg viewBox="0 0 512 512"><defs><linearGradient id="r1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3B82F6"/><stop offset="50%" stop-color="#A855F7"/><stop offset="100%" stop-color="#F97316"/></linearGradient></defs><circle cx="256" cy="256" r="256" fill="url(#r1)"/><circle cx="256" cy="256" r="238" fill="#0B0F1A"/><g transform="rotate(8 256 256) translate(200,160)"><rect width="130" height="160" rx="20" fill="#141B2E" stroke="#3A4A6B" stroke-width="3"/></g><g transform="rotate(-7 256 256) translate(180,180)"><rect width="130" height="160" rx="20" fill="#2A3A6B"/><polygon points="43,45 43,115 90,80" fill="#fff"/></g><g transform="translate(356,150)"><polygon points="0,-22 7,-7 22,0 7,7 0,22 -7,7 -22,0 -7,-7" fill="#F5B942"/></g></svg>
+      THE TECH AGENCY
+    </a>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="thumbnail-review.html">Thumbnail Review</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get a free sample</a>
+  </div>
+</nav>
+
+<div class="page-header wrap">
+  <h1>Send a channel or a business</h1>
+  <p>Get a free sample redesign back, or ask a question first — either way, expect a reply fast.</p>
+</div>
+
+<section class="section" style="border-bottom:none;">
+  <div class="wrap contact-layout">
+    <div class="contact-info">
+      <h3>What to include</h3>
+      <p>A link to your channel, page, or business, and which service you're interested in. The more specific, the faster the turnaround.</p>
+      <h3>Response time</h3>
+      <p>Replies go out same day, usually within a few hours.</p>
+      <h3>First-time clients</h3>
+      <p>New to working together? The first sample redesign is free, no strings attached.</p>
+      <div class="setup-note">Setup note: this form posts to Formspree. Replace <code>YOUR_FORM_ID</code> in the HTML with your real Formspree endpoint after creating a free account at formspree.io.</div>
+    </div>
+
+    <form class="form-card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="link">Channel / business link</label>
+        <input type="url" id="link" name="link" placeholder="https://">
+      </div>
+      <div class="field">
+        <label for="service">Service you're interested in</label>
+        <select id="service" name="service">
+          <option>Thumbnail Design</option>
+          <option>Script Writing</option>
+          <option>Video / Reel Editing</option>
+          <option>Post Making</option>
+          <option>Content Strategy</option>
+          <option>Poster Design</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what you need, or just say hi and share your channel"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">
+      <svg viewBox="0 0 512 512"><defs><linearGradient id="r2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3B82F6"/><stop offset="50%" stop-color="#A855F7"/><stop offset="100%" stop-color="#F97316"/></linearGradient></defs><circle cx="256" cy="256" r="256" fill="url(#r2)"/><circle cx="256" cy="256" r="238" fill="#0B0F1A"/><g transform="rotate(8 256 256) translate(200,160)"><rect width="130" height="160" rx="20" fill="#141B2E" stroke="#3A4A6B" stroke-width="3"/></g><g transform="rotate(-7 256 256) translate(180,180)"><rect width="130" height="160" rx="20" fill="#2A3A6B"/><polygon points="43,45 43,115 90,80" fill="#fff"/></g><g transform="translate(356,150)"><polygon points="0,-22 7,-7 22,0 7,7 0,22 -7,7 -22,0 -7,-7" fill="#F5B942"/></g></svg>
+      THE TECH AGENCY
+    </div>
+    <span class="footer-tag"><span>Create</span><span>Manage</span><span>Grow</span></span>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
