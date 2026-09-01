@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thumbnail Review Tool — The Tech Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .upload-zone {
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-md);
+    padding: 48px 24px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 15px;
+    margin-bottom: 24px;
+    cursor: pointer;
+  }
+  .upload-zone.drag { border-color: var(--purple); color: var(--text); }
+  .tier-price { font-family: 'Space Grotesk', sans-serif; font-size: 28px; margin-bottom: 4px; }
+  .setup-note { background: var(--bg-raised); border: 1px dashed var(--border); border-radius: var(--radius-sm); padding: 16px 18px; font-size: 13.5px; color: var(--text-dim); margin-top: 32px; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-brand">
+      <svg viewBox="0 0 512 512"><defs><linearGradient id="r1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3B82F6"/><stop offset="50%" stop-color="#A855F7"/><stop offset="100%" stop-color="#F97316"/></linearGradient></defs><circle cx="256" cy="256" r="256" fill="url(#r1)"/><circle cx="256" cy="256" r="238" fill="#0B0F1A"/><g transform="rotate(8 256 256) translate(200,160)"><rect width="130" height="160" rx="20" fill="#141B2E" stroke="#3A4A6B" stroke-width="3"/></g><g transform="rotate(-7 256 256) translate(180,180)"><rect width="130" height="160" rx="20" fill="#2A3A6B"/><polygon points="43,45 43,115 90,80" fill="#fff"/></g><g transform="translate(356,150)"><polygon points="0,-22 7,-7 22,0 7,7 0,22 -7,7 -22,0 -7,-7" fill="#F5B942"/></g></svg>
+      THE TECH AGENCY
+    </a>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="thumbnail-review.html">Thumbnail Review</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Get a free sample</a>
+  </div>
+</nav>
+
+<div class="page-header wrap">
+  <h1>Get an honest read on your thumbnail</h1>
+  <p>Upload what you've got. You'll hear back on hierarchy, curiosity, colour, and whether it would actually earn a click — not just whether it looks nice.</p>
+</div>
+
+<section class="section" style="border-bottom:none;">
+  <div class="wrap">
+
+    <div class="tiers">
+      <div class="tier-card">
+        <h3>Free Review</h3>
+        <span class="tier-time">Reply within 48–72 hours</span>
+        <div class="tier-price">$0</div>
+        <ul>
+          <li>Written feedback on your thumbnail</li>
+          <li>What's working and what isn't</li>
+          <li>One concrete suggestion to try next</li>
+        </ul>
+      </div>
+      <div class="tier-card priority">
+        <h3>Priority Review</h3>
+        <span class="tier-time">Reply within 4 hours</span>
+        <div class="tier-price">$5</div>
+        <ul>
+          <li>Everything in Free Review</li>
+          <li>Jumps the queue — same-day, usually within hours</li>
+          <li>A quick note on what a redesign would change</li>
+        </ul>
+      </div>
+    </div>
+
+    <form class="form-card" action="https://formspree.io/f/xgaeavjb" method="POST">
+      <div class="field">
+        <label for="tr-name">Name</label>
+        <input type="text" id="tr-name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="tr-email">Email</label>
+        <input type="email" id="tr-email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="tr-niche">Channel niche</label>
+        <input type="text" id="tr-niche" name="niche" placeholder="e.g. gaming, finance, tutorials">
+      </div>
+      <div class="field">
+        <label for="tr-file">Thumbnail link</label>
+        <input type="url" id="tr-file" name="thumbnail_link" placeholder="Paste a Google Drive, Imgur, or Google Photos link" required>
+      </div>
+      <div class="field">
+        <label for="tr-tier">Which tier?</label>
+        <select id="tr-tier" name="tier">
+          <option>Free Review (48–72 hours)</option>
+          <option>Priority Review ($5, within 4 hours)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Submit for review</button>
+      <p style="text-align:center; font-size:13px; margin-top:14px;">Chose Priority? Complete payment after submitting — link below.</p>
+    </form>
+
+    <div class="setup-note">
+      This form is connected to Formspree. Submitters share a link to their thumbnail (Drive/Imgur/Photos) instead of uploading a file directly — Formspree's free plan doesn't support file uploads, and this keeps the tool fully free. Still to do: create a Razorpay Payment Link (no coding needed, from your Razorpay dashboard) for $5 and add that link as a button near the "Chose Priority?" line above.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">
+      <svg viewBox="0 0 512 512"><defs><linearGradient id="r2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3B82F6"/><stop offset="50%" stop-color="#A855F7"/><stop offset="100%" stop-color="#F97316"/></linearGradient></defs><circle cx="256" cy="256" r="256" fill="url(#r2)"/><circle cx="256" cy="256" r="238" fill="#0B0F1A"/><g transform="rotate(8 256 256) translate(200,160)"><rect width="130" height="160" rx="20" fill="#141B2E" stroke="#3A4A6B" stroke-width="3"/></g><g transform="rotate(-7 256 256) translate(180,180)"><rect width="130" height="160" rx="20" fill="#2A3A6B"/><polygon points="43,45 43,115 90,80" fill="#fff"/></g><g transform="translate(356,150)"><polygon points="0,-22 7,-7 22,0 7,7 0,22 -7,7 -22,0 -7,-7" fill="#F5B942"/></g></svg>
+      THE TECH AGENCY
+    </div>
+    <span class="footer-tag"><span>Create</span><span>Manage</span><span>Grow</span></span>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
