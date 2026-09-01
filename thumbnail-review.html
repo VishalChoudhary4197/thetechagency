@@ -72,7 +72,7 @@
       </div>
     </div>
 
-    <form class="form-card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+    <form class="form-card" action="https://formspree.io/f/xgaeavjb" method="POST">
       <div class="field">
         <label for="tr-name">Name</label>
         <input type="text" id="tr-name" name="name" required>
@@ -86,8 +86,8 @@
         <input type="text" id="tr-niche" name="niche" placeholder="e.g. gaming, finance, tutorials">
       </div>
       <div class="field">
-        <label for="tr-file">Thumbnail image</label>
-        <input type="file" id="tr-file" name="thumbnail" accept="image/*" required>
+        <label for="tr-file">Thumbnail link</label>
+        <input type="url" id="tr-file" name="thumbnail_link" placeholder="Paste a Google Drive, Imgur, or Google Photos link" required>
       </div>
       <div class="field">
         <label for="tr-tier">Which tier?</label>
@@ -101,7 +101,7 @@
     </form>
 
     <div class="setup-note">
-      Setup notes: (1) Replace <code>YOUR_FORM_ID</code> with your Formspree endpoint — Formspree supports file uploads on paid plans, or use a service like Uploadcare/Cloudinary for the image field on the free plan. (2) For Priority Review payment, create a Razorpay Payment Link (no coding needed, from your Razorpay dashboard) for $5 and add that link as a button below the form. (3) Every submission arrives by email — check it and reply within the promised window.
+      This form is connected to Formspree. Submitters share a link to their thumbnail (Drive/Imgur/Photos) instead of uploading a file directly — Formspree's free plan doesn't support file uploads, and this keeps the tool fully free. Still to do: create a Razorpay Payment Link (no coding needed, from your Razorpay dashboard) for $5 and add that link as a button near the "Chose Priority?" line above.
     </div>
   </div>
 </section>
